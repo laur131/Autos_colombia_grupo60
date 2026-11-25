@@ -1,0 +1,26 @@
+:root{--navy:#14275e;--blue:#1565c0;--light:#f7f9fd;--line:#d6dfee;--ok:#17703f;--bad:#a32020;--warn:#9a6700;--txt:#14213d}
+*{box-sizing:border-box}
+body{margin:0;font-family:Inter,Arial,sans-serif;color:var(--txt);background:#fff}
+h1{margin:0;font-size:22px}h2{margin:0 0 10px;font-size:16px}
+.page{padding:24px 32px;display:flex;flex-direction:column;gap:16px}
+.card{background:var(--light);border:1px solid var(--line);border-radius:14px;padding:16px}
+.row{display:flex;gap:12px;flex-wrap:wrap;align-items:flex-end}.grow{flex:1}
+label{font-size:12px;font-weight:700;color:#33405f;display:flex;flex-direction:column;gap:5px}
+input,select,textarea{border:1px solid #bccbe3;border-radius:8px;padding:10px;font-size:14px;background:#fff;color:var(--txt);font-family:inherit}
+.btn{background:var(--navy);color:#fff;border:0;border-radius:10px;padding:10px 16px;font-weight:600;font-size:13px;cursor:pointer}
+.btn.blue{background:var(--blue)}.btn.line{background:#fff;color:var(--navy);border:1px solid var(--navy)}
+.btn.red{background:#fff;color:var(--bad);border:1px solid var(--bad)}.btn.green{background:#fff;color:var(--ok);border:1px solid var(--ok)}
+.btn:disabled{opacity:.5;cursor:not-allowed}
+table{width:100%;border-collapse:collapse;font-size:13px}
+th{text-align:left;font-size:11px;color:#4a5578;padding:8px;letter-spacing:.05em}
+td{padding:10px 8px;border-top:1px solid #e3e9f3}
+.ok{color:var(--ok);font-weight:700}.bad{color:var(--bad);font-weight:700}.warn{color:var(--warn);font-weight:700}
+.tag{display:inline-block;background:#e8eefb;border-radius:6px;padding:2px 8px;font-size:11px;font-weight:700}
+.alert{border-radius:10px;padding:12px 14px;font-size:14px}
+.alert.ok{background:#e4f5ea;border:1px solid var(--ok)}.alert.bad{background:#fde8e8;border:1px solid var(--bad)}
+.bar{height:10px;border-radius:6px;background:#dbe4f3;overflow:hidden}.bar>i{display:block;height:100%;background:var(--blue)}
+.bar.full>i{background:var(--bad)}
+.cells{display:grid;grid-template-columns:repeat(auto-fill,minmax(86px,1fr));gap:8px}
+.cell{border:1px solid #bccbe3;border-radius:10px;padding:8px;font-size:12px;cursor:pointer;background:#dff3e6;text-align:left}
+.cell.OCUPADA{background:#fde0e0}.cell.BLOQUEADA{background:#ffe9b8}.cell.off{opacity:.45;border-style:dashed}.cell.sel{outline:2px solid var(--blue)}
+.cols{display:flex;gap:16px;flex-wrap:wrap}.cols>*{flex:1;min-width:280px}
